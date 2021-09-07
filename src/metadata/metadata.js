@@ -20,7 +20,7 @@ module.exports = {
             title: 'Full Stack Development and Software Engineering',
             website: '(github)',
             languages:['Javascript', "React", "Python", "Java", 'C/C++/C#'],
-            familiarsSoftware:[],
+            familiarsSoftware:["placeholder"],
           },
     {
             title: 'Animation and Art',
