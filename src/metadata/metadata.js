@@ -12,9 +12,9 @@ module.exports = {
       "Bachelors of Computer Science (anticipated)",
       "Bachelors of Fine Arts: Animation (anticipated)"
     ],
-    experience: [
-      "Internship - High Alpha : Docket"
-    ],
+    // experience: [
+    //   "Internship - High Alpha : Docket"
+    // ],
   skills: [
     {
             title: 'Full Stack Development and Software Engineering',
