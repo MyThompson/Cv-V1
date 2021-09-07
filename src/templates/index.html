@@ -33,44 +33,29 @@
         </div>
     </div>
 
-    <h3 class="screen">Skills</h3>
+    <h3 class="screen">Education</h3>
     <div class="row mb-4">
-        {{#each skills}}
-        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-            <small>{{ this.[0] }}</small>
-        </div>
+    {{#each education}}
         <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            {{ this.[1] }}
+            {{ this }}
         </div>
         {{/each}}
     </div>
 
-    <p>
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
-    </p>
-
     <h2>Professional Experience</h2>
-    {{#each plays}}
+    {{#each experience}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }}</h3>
-            <p class="text-muted">{{ written }}</p>
+            <p class="text-muted">{{ website }}</p>
 
             {{{markdown contents }}}
-
-            <div>
-                {{#each badges }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
+S
         </div>
     </div>
     {{/each}}
 
-    <h2>Education</h2>
+    <!-- <h2>Education</h2>
     <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
 
     <h2>Additional Experience</h2>
@@ -89,7 +74,7 @@
             </div>
         </div>
     </div>
-    {{/each}}
+    {{/each}} -->
 </div>
 </body>
 </html>
