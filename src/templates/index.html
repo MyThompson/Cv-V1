@@ -37,10 +37,9 @@
     <h3>Education</h3>
     <div class="row mb-4">
     {{#each education}}
+    {{{ markdown contents}}}
         <div>
-            {{#each education}}
-            <span>{{ this }}</span>
-            {{/each}}
+            {{ this }}
         </div>
         {{/each}}
     </div>
@@ -50,7 +49,7 @@
         <div class="card-body">
             <div class="mb-2"><strong>{{ header }}</strong></div>
 
-            {{{markdown contents }}}
+            {{{ markdown contents }}}
 
             <div>
                 {{#each skills }}
