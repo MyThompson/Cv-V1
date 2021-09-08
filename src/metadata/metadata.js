@@ -12,7 +12,7 @@ module.exports = {
       "Bachelors of Computer Science (anticipated)",
       "Bachelors of Fine Arts: Animation (anticipated)"
     ],
-    // experience: [
+    // experience: [ foo
     //   "Internship - High Alpha : Docket"
     // ],
   skills: [
