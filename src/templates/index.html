@@ -53,9 +53,10 @@
             <div class="mb-2"><strong>{{ title }}</strong></div>
 
             <div>
-                
-                <span >{{ this }}</span>
-                
+                <span >{{ this.title }}</span>
+                <span >{{ this.website }}</span>
+                <span >{{#each this}}{{content}}</span>{{/each}}
+                <span >{{#each this}}{{content}}</span>{{/each}}   
             </div>
             {{/each}}
         </div>
@@ -81,9 +82,8 @@
             <div class="mb-2"><strong>{{ project }}</strong></div>
 
             <div>
-                
-                <span >{{ this }}</span>
-                
+                <span >{{#each this}}{{content}}</span>{{/each}}
+                <span >{{ this.description }}</span>
             </div>
             {{/each}}
         </div>
@@ -95,6 +95,9 @@
         <span>
             <li>
                 {{ this }}
+                <div>
+
+                </div>
             </li>
         </span>
         {{/each}}
