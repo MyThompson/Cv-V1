@@ -42,16 +42,19 @@
         {{/each}}
     </div> -->
 
-    <!-- <h2>Professional Experience</h2>
     {{#each experience}}
-    <div class="card mb-4">
+    <div class="card mt-4">
         <div class="card-body">
-            <h3>{{ title }}</h3>
-            <p class="text-muted">{{ website }}</p>
+            <div class="mb-2"><strong>{{ header }}</strong></div>
 
             {{{markdown contents }}}
 
-        </div> -->
+            <div>
+                {{#each skills }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
     </div>
     {{/each}}
 
