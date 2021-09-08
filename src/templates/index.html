@@ -36,11 +36,12 @@
 
     <h3>Education</h3>
     <div class="row mb-4">
-    {{#each education}}
-    {{{ markdown contents}}}
-        <div>
-            {{ this }}
-        </div>
+        {{#each education}}
+        <span>
+            <li>
+                {{ this }}
+            </li>
+        </span>
         {{/each}}
     </div>
 
