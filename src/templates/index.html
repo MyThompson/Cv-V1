@@ -35,7 +35,7 @@
     </div>
 
     <h3>Education</h3>
-    <div class="row mb-4">
+    <div class="cark mt-4">
         {{#each education}}
         <span>
             <li>
@@ -45,6 +45,17 @@
         {{/each}}
     </div>
 
+    {{#each skills}}
+    <h3>Skills</h3>
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="mb-2"><strong>{{ title }}</strong></div>
+
+            {{{ markdown contents }}}
+
+    </div>
+    {{/each}}
+
     {{#each experience}}
     <div class="card mt-4">
         <div class="card-body">
@@ -52,35 +63,31 @@
 
             {{{ markdown contents }}}
 
-            <div>
-                {{#each skills }}
-                <span>{{ this }}</span>
-                {{/each}}
-            </div>
-        </div>
     </div>
     {{/each}}
 
-    <!-- <h2>Education</h2>
-    <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
-
-    <h2>Additional Experience</h2>
-
-    {{#each experience}}
+    {{#each projects}}
+    <h3>Development Projects</h3>
     <div class="card mt-4">
         <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
+            <div class="mb-2"><strong>{{ project }}</strong></div>
 
-            {{{markdown contents }}}
+            {{{ markdown contents }}}
 
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
-        </div>
     </div>
-    {{/each}} -->
+    {{each}}
+
+    <h3>Hobbies</h3>
+    <div class="row mb-4">
+        {{#each hobbies}}
+        <span>
+            <li>
+                {{ this }}
+            </li>
+        </span>
+        {{/each}}
+    </div>
+
 </div>
 </body>
 </html>
