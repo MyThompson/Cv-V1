@@ -13,7 +13,8 @@
 <div class="container page">
     <div class="row">
         <div class="col-md-6 col-print-6">
-            <h1>{{ name }}<br/>{{ title }}</h1>
+            <h1>{{ name }}</h1>
+            <h2>{{ title }}</h2>
             <p>
                 <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
             </p>
@@ -33,14 +34,16 @@
         </div>
     </div>
 
-    <!-- <h3 class="screen">Education</h3>
+    <h3>Education</h3>
     <div class="row mb-4">
     {{#each education}}
-        <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            {{ this }}
+        <div>
+            {{#each education}}
+            <span>{{ this }}</span>
+            {{/each}}
         </div>
         {{/each}}
-    </div> -->
+    </div>
 
     {{#each experience}}
     <div class="card mt-4">
@@ -51,7 +54,7 @@
 
             <div>
                 {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
+                <span>{{ this }}</span>
                 {{/each}}
             </div>
         </div>
